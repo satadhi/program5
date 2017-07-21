@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+#include <stdio.h>
+
+int a;
+char aaa[50];
+
+int main()
+{
+scanf("enter the number :%d",&a);
+printf("%d",a);
+
+printf("Enter a string\n");
+getchar();
+fgets(aaa,50,stdin);
+printf("%s\n",aaa);
+ return 0;
+=======
 #include<stdio.h>
 #include<stdlib.h>
 int main()
@@ -25,4 +42,5 @@ for(i=0;i<max;i++)
 
 printf("/n");
 return 0;
+>>>>>>> 9fae04bb20b9f4d03ae63f38200d8fc8f139b0d7
 }
