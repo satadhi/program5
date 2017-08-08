@@ -21,17 +21,19 @@ for i in range(n2 -1  ) :
 for i in range( n3 -1 ) :
     sum3.append(sum3[i] + h3[n3 -2 -i ])
 
-i,j,k = n1-1,n2-1,n3-1
-while( i != 0 and j != 0 and k != 0):
-    if(sum1[i] == sum2[j] and sum2[j] == sum3[k]):
+i,j,k = n1-1, n2-1, n3-1
+
+while( (i != 0) and (j != 0) and (k != 0)):
+    if(sum1[i] == sum2[j]) and (sum2[j] == sum3[k]):
         print(sum1[i])
         break
-    elif sum1[i] > sum2[j] or sum1[i] >sum3[k] :
-        i -= i
-    elif sum1[i] < sum2[j] or sum2[j] > sum3[k] :
-        j -= j
-    elif sum3[i]  > sum2[j] and sum3[j] > sum2[k]:
-        k -=k
-        
+    elif (sum1[i] > sum2[j]) or (sum1[i] > sum3[k]) :
+        i -= 1
+    elif (sum2[j] > sum1[i]) or (sum2[j] > sum3[k]) :
+        j -= 1
+    elif (sum3[k] > sum1[i]) or (sum3[k] > sum2[j]) :
+        k -= 1
+    print(sum1[i],sum2[j],sum3[k])
+
 if(j ==0 or j ==0 or k == 0):
     print(0)
