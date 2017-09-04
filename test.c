@@ -3,11 +3,11 @@
 
 int main()
 {
-  int a,b;
-printf("this is running \n");
-printf("this is printing \n");
-scanf("%d",&a );
-printf("this is printing  %d \n",a);
-
+  int belongs[5] ;
+for(int i = 0 ; 0 < 5 ; i++ )
+    {
+      printf("%d ",i );
+    }
+    printf("\n");
   return 0;
 }
